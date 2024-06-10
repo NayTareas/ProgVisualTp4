@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+	<title>Tp4</title>
+	<!--Import Google Icon Font-->
+   <!--  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    Import materialize.css
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+	
+	<link rel="stylesheet" data-th-href="@{/webjars/bootstrap/5.3.3/css/boostrap.min.css}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+
+	<div class="container">
+	
+	<header>
+	 <div th:replace="fragments/header :: navbar"></div>
+		
+		</div>
+	</header>
+	<main>
+		<h1>HOLA MUNDO</h1>
+		<aside>
+			<h1>aside</h1>
+		</aside>
+	</main>	
+	
+	<footer>
+		<h1>footer</h1>
+	 <div th:replace="fragments/header :: footer"></div>
+		
+		</div>
+	</footer>	
+	</div>
+	   <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+		<script data-th-src="@{/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>
